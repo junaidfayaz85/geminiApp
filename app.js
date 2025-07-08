@@ -30,7 +30,7 @@ res.status(200).json({
 
 })
 
-app.use('*', ()=>{
+app.get('*', ()=>{
     res.status(404).json({
         msg: "bad request"
     })
